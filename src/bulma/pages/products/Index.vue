@@ -42,7 +42,7 @@ import {
     Modal, EnsoTable, EnsoDateFilter,
 } from '@enso-ui/bulma';
 import PositionsManager from '@inventory/PositionsManager.vue';
-import FilterState from '@commercial-pages/components/FilterState';
+import { FilterState } from '@enso-ui/filters/bulma';
 
 library.add(faBoxOpen);
 
