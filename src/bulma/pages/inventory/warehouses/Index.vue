@@ -15,7 +15,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFileImport } from '@fortawesome/free-solid-svg-icons';
 import { EnsoTable } from '@enso-ui/tables/bulma';
-import ImportUploader from '@enso-ui/ui/src/bulma/pages/dataImport/components/ImportUploader.vue';
+import ImportUploader from '@enso-ui/data-import/src/bulma/pages/dataImport/components/ImportUploader.vue';
 
 library.add(faFileImport);
 
