@@ -38,6 +38,7 @@
     "@enso-ui/filters": "^1.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "jsbarcode": "^3.11.0",
     "vue": "^2.5.16"
   }
 }
