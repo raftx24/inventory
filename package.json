@@ -1,6 +1,10 @@
 {
   "name": "@enso-ui/inventory",
+<<<<<<< HEAD
   "version": "1.0.6",
+=======
+  "version": "1.0.7",
+>>>>>>> 8fc2c07ea2447796681eab019906cd1db24f1ea6
   "description": "Inventory operations package",
   "main": "index.js",
   "scripts": {
@@ -45,7 +49,10 @@
     "@enso-ui/ui": "2.0.x",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
+<<<<<<< HEAD
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
+=======
+>>>>>>> 8fc2c07ea2447796681eab019906cd1db24f1ea6
     "jsbarcode": "^3.11.0",
     "vue": "^2.5.16"
   }
