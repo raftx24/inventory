@@ -22,9 +22,8 @@
 </template>
 
 <script>
-
-import { library } from '@fortawesome/fontawesome-svg-core/index.js';
-import { faRandom } from '@fortawesome/free-solid-svg-icons/index.js';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faRandom } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faRandom);
 

@@ -24,8 +24,7 @@
             :intervals="intervals"
             :params="params"
             @manage-positions="productId=$event.dtRowId"
-            @reset="$refs.filterState.reset()">
-        </enso-table>
+            @reset="$refs.filterState.reset()"/>
         <modal show
             v-if="productId"
             @keyup.esc="close"
@@ -38,11 +37,10 @@
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-import {
-    Modal, EnsoTable, EnsoDateFilter,
-} from '@enso-ui/bulma';
-import PositionsManager from '@inventory/PositionsManager.vue';
+import { Modal } from '@enso-ui/modal/bulma';
+import { EnsoTable, EnsoDateFilter } from '@enso-ui/tables/bulma';
 import { FilterState } from '@enso-ui/filters/renderless';
+import PositionsManager from '../../components/PositionsManager.vue';
 
 library.add(faBoxOpen);
 
@@ -95,5 +93,4 @@ export default {
         },
     },
 };
-
 </script>

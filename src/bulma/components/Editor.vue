@@ -46,11 +46,10 @@
 </template>
 
 <script>
-
 import Errors from '@enso-ui/forms/src/classes/Errors';
 import { selectOnFocus } from '@enso-ui/directives';
-import { library } from '@fortawesome/fontawesome-svg-core/index.js';
-import { faCheck, faBan, faTimes } from '@fortawesome/free-solid-svg-icons/index.js';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCheck, faBan, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faCheck, faBan, faTimes);
 

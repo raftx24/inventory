@@ -40,9 +40,9 @@
 
 <script>
 import { Accessories, Documents, Comments } from '@enso-ui/accessories/bulma';
-import { Tab } from '@enso-ui/bulma';
+import { Tab } from '@enso-ui/tabs/bulma';
 import { EnsoForm } from '@enso-ui/forms/bulma';
-import PositionsManager from '@inventory/PositionsManager.vue';
+import PositionsManager from '../../components/PositionsManager.vue';
 
 export default {
     name: 'Edit',

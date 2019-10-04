@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
 import Editor from './Editor.vue';
 import EditorLine from './EditorLine.vue';
 

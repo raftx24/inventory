@@ -30,13 +30,11 @@
 </template>
 
 <script>
-
-import { library } from '@fortawesome/fontawesome-svg-core/index.js';
-import { faBoxOpen } from '@fortawesome/free-solid-svg-icons/index.js';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import {
     Card, CardHeader, CardRefresh, CardCollapse, CardBadge, CardContent,
-} from '@enso-ui/bulma';
-
+} from '@enso-ui/card/bulma';
 import Lines from './Lines.vue';
 
 library.add(faBoxOpen);
