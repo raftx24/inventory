@@ -54,7 +54,7 @@ export default {
 
     props: {
         productId: {
-            type: Number,
+            type: [String, Number],
             required: true,
         },
     },
