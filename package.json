@@ -31,20 +31,21 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
-    "@enso-ui/accessories": "2.0.x",
+    "@enso-ui/accessories": "2.1.x",
     "@enso-ui/card": "1.0.x",
     "@enso-ui/data-import": "1.0.x",
     "@enso-ui/directives": "1.0.x",
-    "@enso-ui/filters": "1.1.x",
+    "@enso-ui/filters": "1.2.x",
     "@enso-ui/forms": "1.2.x",
     "@enso-ui/modal": "1.0.x",
     "@enso-ui/products": "1.0.x",
     "@enso-ui/select": "1.1.x",
-    "@enso-ui/tables": "1.1.x",
+    "@enso-ui/tables": "1.2.x",
     "@enso-ui/tabs": "1.0.x",
-    "@enso-ui/ui": "2.0.x",
+    "@enso-ui/ui": "2.1.x",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "jsbarcode": "^3.11.0",
     "vue": "^2.5.16"
   }
