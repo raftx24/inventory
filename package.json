@@ -31,7 +31,7 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
-    "@enso-ui/accessories": "2.0.x",
+    "@enso-ui/accessories": "2.1.x",
     "@enso-ui/card": "1.0.x",
     "@enso-ui/data-import": "1.0.x",
     "@enso-ui/directives": "1.0.x",
