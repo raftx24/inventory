@@ -1,6 +1,6 @@
 {
   "name": "@enso-ui/inventory",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Inventory operations package",
   "main": "index.js",
   "scripts": {
