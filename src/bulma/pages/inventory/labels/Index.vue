@@ -43,22 +43,29 @@
                 </div>
             </div>
         </div>
-        <div class="columns is-multiline is-variable is-1 printable">
-            <div class="column is-3"
-                 v-for="(item, index) in positions"
-                 :key="item.id">
-                <div class="box barcode-box has-text-centered">
-                    <svg class="item-barcode dotted-border"
-                        :data-value="item.label"/>
-                    <div class="has-padding-top-large">
-                        <a href="#">
-                            <span class="icon is-small">
-                                <fa icon="hashtag" size="xs"/>
-                            </span>
-                            {{ index + 1 }} / {{ positions.length }}
-                        </a>
+        <div class="printable">
+            <div class="chunk"
+                 v-for="(chunk, index) in chunks"
+                 :key="index">
+                <div class="columns is-multiline is-variable is-1">
+                    <div class="column is-3"
+                         v-for="(item, idx) in chunk"
+                         :key="item.id">
+                        <div class="box barcode-box has-text-centered">
+                            <svg class="item-barcode dotted-border"
+                                 :data-value="item.label"/>
+                            <div class="has-padding-top-large">
+                                <a href="#">
+                                <span class="icon is-small">
+                                    <fa icon="hashtag" size="xs"/>
+                                </span>
+                                    {{ index * 20 + idx + 1 }} / {{ positions.length }}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="page-break"/>
             </div>
         </div>
     </div>
@@ -91,6 +98,21 @@ export default {
     }),
 
     computed: {
+        chunks() {
+            let current = 0;
+            const chunks = [[]];
+
+            this.positions.forEach((position) => {
+                if (chunks[current].length === 20) {
+                    current++;
+                    chunks.push([]);
+                }
+
+                chunks[current].push(position);
+            });
+
+            return chunks;
+        },
         rowParams() {
             return {
                 attribute: 'row',
@@ -169,9 +191,7 @@ export default {
         }
 
         .page-break {
-            display: block;
-            page-break-before: always;
-            break-before: page;
+            break-after: always;
         }
 
         .box.barcode-box {
