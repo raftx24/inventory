@@ -145,7 +145,6 @@ export default {
 
     @media print {
 
-
         .app-main > *:not(.main-content) {
             display:none;
         }
@@ -154,7 +153,7 @@ export default {
             display:none;
         }
 
-        .page-content > *:not(.wrapper) {
+        .page-content .level {
             display:none;
         }
 
