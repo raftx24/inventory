@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="columns is-centered">
+        <div class="columns is-centered"
+            v-if="ready">
             <div class="column is-narrow">
                 <enso-date-filter class="box raises-on-hover"
                     v-model="params.dateInterval"
@@ -9,12 +10,6 @@
                     :interval="intervals.products.updated_at"/>
             </div>
         </div>
-        <filter-state :api-version="apiVersion"
-            name="product_filters"
-            :filters="filters"
-            :intervals="intervals"
-            :params="params"
-            ref="filterState"/>
         <enso-table class="box is-paddingless raises-on-hover"
             ref="stocks"
             id="products"
@@ -28,6 +23,13 @@
             @close="close">
             <positions-manager :product-id="productId"/>
         </modal>
+        <filter-state :api-version="apiVersion"
+            name="product_filters"
+            :filters="filters"
+            :intervals="intervals"
+            :params="params"
+            @ready="ready = true"
+            ref="filterState"/>
     </div>
 </template>
 
@@ -55,7 +57,8 @@ export default {
 
     data() {
         return {
-            apiVersion: 1.1,
+            apiVersion: 1.2,
+            ready: false,
             productId: null,
             filters: {
                 products: {
@@ -67,7 +70,6 @@ export default {
                     updated_at: {
                         min: null,
                         max: null,
-                        dateFormat: null,
                     },
                 },
             },
